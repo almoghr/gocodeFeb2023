@@ -131,40 +131,71 @@ const omarAge = 60;
 // console.log('put choclate marbles')
 // console.log('put long ornament')
 
-for(let i = 1; i <= 30; i = i+1){
-    console.log('get cup')
-    console.log('fill cup')
-    console.log('put choclate marbles')
-    console.log('put long ornament')
-}
+// for(let i = 1; i <= 30; i = i+1){
+//     console.log('get cup')
+//     console.log('fill cup')
+//     console.log('put choclate marbles')
+//     console.log('put long ornament')
+// }
 
-let line = ''
+// let line = ''
 
-for(let i = 1; i <= 10; i++){
-   line += i*8 + ' '
-   console.log(line)
-}
-
-
-for(let j=1; j<=10; j++){
-    let line2 = ''
-    for(let k=1;k<=10;k++){
-        line2 += j * k + '\t';
-    }
-    console.log(line2)
-}
+// for(let i = 1; i <= 10; i++){
+//    line += i*8 + ' '
+//    console.log(line)
+// }
 
 
-let x = 11;
-while(x < 10){
-    console.log('i am only less than 10 years old')
-    x++
-}
+// for(let j=1; j<=10; j++){
+//     let line2 = ''
+//     for(let k=1;k<=10;k++){
+//         line2 += j * k + '\t';
+//     }
+//     console.log(line2)
+// }
 
-console.log(x)
-do{
-    console.log('i am only less than 10 years old')
-    x++
-} while(x<10)
-console.log(x)
 
+// let x = 11;
+// while(x < 10){
+//     console.log('i am only less than 10 years old')
+//     x++
+// }
+
+// console.log(x)
+// do{
+//     console.log('i am only less than 10 years old')
+//     x++
+// } while(x<10)
+// console.log(x)
+
+// const text = prompt('enter whatever you like')
+// for(let i = 0; i<10; i++){
+//     console.log(text)
+// }
+
+// const num = parseInt(prompt('enter a number'))
+// let sumOfGrades = 0
+// for(let i = 1; i <= num; i++){
+//     sumOfGrades += parseInt(prompt('enter grade number' + i))
+// }
+// console.log(num)
+// console.log(sumOfGrades)
+// const avg = sumOfGrades / num
+
+// console.log(avg)
+//avrage = סכום כל הציונים חילוק כמות הציונים
+// let word = ''
+// for(let i = 0; word !== 'stop'; i++){
+//     word = prompt('enter any word, if you want this to stop, write "stop"')
+//     console.log(i)
+//     console.log(word)
+// }
+
+// let isAlmogHappy
+// if(isAlmogHappy){
+//     console.log('yes')
+// } else{
+//     console.log(isAlmogHappy)
+// }
+
+// false, null, undefined, '', "", ``, 0
