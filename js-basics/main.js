@@ -1,16 +1,5 @@
 // console.log('hello world');
-function makeOmlette(typeOfEgg, nameOfEater){
-    console.log('hello ' + nameOfEater)
-    console.log('take the egg out of the fridge')
-    console.log('break the egg and put the inside in a container vessel')
-    console.log('mix')
-    console.log('take the pan and heat it on the gas')
-    console.log('put oil on the pan')
-    console.log('if the oil is hot enough take the mixed egg')
-    console.log('when one side looks ready flip it')
-    console.log('put the ' + typeOfEgg + ' in a dish and eat!')
-    console.log('bonappetite')
-}
+
 // const myName = 'almog'; // string
 // const myName2 = `almog`;
 // console.log(myName,myName2);
@@ -39,7 +28,6 @@ function makeOmlette(typeOfEgg, nameOfEater){
 // console.log(3+5*8); // 43 // 64
 // console.log(myAge + omarAge);
 // console.log(yudiAge + omarAge);
-// makeOmlette("scrambled eggs", "almog")
 // console.log(myAge+omarAge+yudiAge); // '6121'
 
 // console.log(yudiAge+myAge+omarAge); // ''
@@ -110,7 +98,6 @@ function makeOmlette(typeOfEgg, nameOfEater){
 // const whatDayIsToday = prompt('tell me the day')
 // const isAlmogHappy = true
 // const isHoliday = false
-// makeOmlette("havita", "yael")
 // if(whatDayIsToday === 'sunday'){
 //     console.log('today is sunday')
 //     if(isAlmogHappy === false){
@@ -156,7 +143,6 @@ function makeOmlette(typeOfEgg, nameOfEater){
 //    console.log(line)
 // }
 
-// makeOmlette("sunny side up", "david")
 // for(let j=1; j<=10; j++){
 //     let line2 = ''
 //     for(let k=1;k<=10;k++){
@@ -220,36 +206,47 @@ function makeOmlette(typeOfEgg, nameOfEater){
 // 7. when one side looks ready flip it
 // 8. put the omelette in a dish and eat!
 
+function makeOmlette(typeOfEgg, nameOfEater){
+    console.log('hello ' + nameOfEater)
+    console.log('take the egg out of the fridge')
+    console.log('break the egg and put the inside in a container vessel')
+    console.log('mix')
+    console.log('take the pan and heat it on the gas')
+    console.log('put oil on the pan')
+    console.log('if the oil is hot enough take the mixed egg')
+    console.log('when one side looks ready flip it')
+    console.log('put the ' + typeOfEgg + ' in a dish and eat!')
+    console.log('bonappetite')
+}
+
+makeOmlette("fjahuisbnldaihas97das80yt asd890 7dysa890", "israel");
 
 
-// makeOmlette("fjahuisbnldaihas97das80yt asd890 7dysa890", "israel");
+two types of functions:
+void: a function that does not return anything
+none-void: a function that returns a value to a variable
+
+function plus(num1, num2){
+    console.log(num1+num2)
+}
+function minus(num1, num2){
+    console.log(num1-num2)
+}
+function divide(num1, num2){
+    console.log(num1/num2)
+}
+function multiple(num1, num2){
+    console.log(num1*num2)
+}
 
 
-// two types of functions:
-// void: a function that does not return anything
-// none-void: a function that returns a value to a variable
+plus(4161561560848905,5151500000000000)
+minus(89, 55)
+divide(36,12)
 
-// function plus(num1, num2){
-//     console.log(num1+num2)
-// }
-// function minus(num1, num2){
-//     console.log(num1-num2)
-// }
-// function divide(num1, num2){
-//     console.log(num1/num2)
-// }
-// function multiple(num1, num2){
-//     console.log(num1*num2)
-// }
-
-
-// plus(4161561560848905,5151500000000000)
-// minus(89, 55)
-// divide(36,12)
-
-// const numA = parseInt(prompt('enter first number for multiple'))
-// const numB = parseInt(prompt('enter second number for multiple'))
-// multiple(numA,numB)
+const numA = parseInt(prompt('enter first number for multiple'))
+const numB = parseInt(prompt('enter second number for multiple'))
+multiple(numA,numB)
 
 
 function createMyEmail(emailFirstPart, emailSecondPart){
