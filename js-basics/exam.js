@@ -1,3 +1,4 @@
+console.log('something')
 
 
 //כתבו פונקציה המקבלת שני מספרים ומציגה את המספר הגדול מבינהם והריצו אותה
@@ -5,6 +6,7 @@
 function whichIsBigger (num1, num2) {
     if(num1>num2){
         console.log(num1)
+        console.log('something')
     } else if (num1===num2){
         console.log('both are the same')
     } else{
@@ -25,12 +27,10 @@ function whichIsBigger2 (num1, num2) {
         console.log(num2)
     }
 }
-
 const firstNumber = parseInt(prompt('enter a number for evaluation'))
 const secondNumber = parseInt(prompt('enter a number for evaluation'))
-
+console.log('something')
 whichIsBigger2(firstNumber, secondNumber)
-
 
 //כתבו פונקציה המקבלת שני מספרים, ותו שיגדיר מה לבצע עליהם (*, /, +) והציגו תשובה מתאימה.
 // הריצו את הפונקציה מהתוכנית ע״י 3 קלטים
@@ -57,15 +57,19 @@ function multi(num1,num2){
 }
 
 function plus(num1,num2){
-    console.log(num1+num2)
 }
 
 const firstNum = parseInt(prompt('enter a number for evaluation'))
+console.log('something')
 const secondNum = parseInt(prompt('enter a number for evaluation'))
 const operation = prompt('enter an operator')
 
 if(operation === "+"){
     plus(firstNum, secondNum)
+    console.log('something')
+    console.log('something')
+    console.log('something')
+    console.log('something')
 } else if( operation === "*"){
     multi(firstNum,secondNum)
 }
