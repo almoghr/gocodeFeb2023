@@ -7,7 +7,7 @@ const toggleColor = document.querySelector(".toggleColor");
 const todos = [];
 let isDarkMode = false;
 
-formBtn.addEventListener("click", function () {
+formBtn.addEventListener("click", function() {
   if (!formInput.value) {
     return;
   }
@@ -24,10 +24,10 @@ formBtn.addEventListener("click", function () {
   showTodos();
 });
 
-function showTodos() {
+const showTodos = () => {
   todosContainer.innerHTML = "";
 
-  todos.forEach(function (todo) {
+  todos.forEach((todo) => {
     const todosForShow = document.createElement("div");
     const span = document.createElement("span");
     const removeBtn = document.createElement("button");
