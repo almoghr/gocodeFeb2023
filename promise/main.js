@@ -78,6 +78,7 @@ const getData = async () => {
     try{
         const response = await fetch('https://api.tvmaze.com/schedule/full')
         const data = await response.json()
+        handleData(data)
         // const ul = document.createElement("ul")
         // console.log(response)
         // console.log(data)
@@ -94,7 +95,17 @@ const getData = async () => {
 
 getData()
 
-
+const handleData = (data) => {
+    console.log(data)
+            const ul = document.createElement("ul")
+        console.log(data)
+        data.forEach((episode) => {
+            const li = document.createElement("li")
+            li.innerText = episode.name
+            ul.append(li)
+        })
+        document.body.append(ul)
+}
 
 
 
