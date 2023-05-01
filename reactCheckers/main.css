@@ -47,3 +47,6 @@ body{
 .red{
     background-color: red;
 }
+.addTodoForm{
+    border: 1px solid blue;
+}
