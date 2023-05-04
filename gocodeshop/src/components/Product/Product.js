@@ -1,8 +1,6 @@
 import "./Product.css";
 export const Product = ({ src, title, price, isVeteran }) => {
   
-  const isAdmin = false;
-
   const onBuyMeNowClick = () => {
     alert(`thank you, i am ${price}$ reacher`);
   };
