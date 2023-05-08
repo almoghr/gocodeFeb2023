@@ -57,6 +57,7 @@ const ProductsSection = () => {
       <Product />
       <Product />
       <Product />
+      <Product />
     </section>
   );
 };
