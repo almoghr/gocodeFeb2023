@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./UserForm.css";
 export const UserForm = () => {
   const [userObject, setUserObject] = useState({});
+  
+  const inputEl = useRef(null);
+
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    inputEl.current.focus();
+    console.log(inputEl)
+    inputEl.current.style.background = 'red'
+  };
 
   const handleFormChange = (name, value) => {
     setUserObject({ ...userObject, [name]: value });
@@ -9,6 +18,7 @@ export const UserForm = () => {
   return (
     <div className="container">
       <input
+        ref={inputEl} 
         name="fullname"
         placeholder="fullname"
         onChange={(event) => {
@@ -17,7 +27,7 @@ export const UserForm = () => {
       />
       <input
         name="email"
-        disabled={!userObject.fullname}
+        // disabled={!userObject.fullname}
         placeholder="email"
         onChange={(event) => {
           handleFormChange(event.target.name, event.target.value);
@@ -56,6 +66,7 @@ export const UserForm = () => {
         <option value="female">female</option>
       </select>
       <button onClick={() => {console.log('submitted', userObject)}}>submit</button>
+      <button onClick={onButtonClick}>focus on fullname</button>
     </div>
   );
 };
