@@ -19,3 +19,14 @@
     text-align: center;
   }
   
+
+  .addToCartContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem;
+  }
+  .addToCartContainer > p{
+    margin-left: .6rem;
+    margin-right: .6rem;
+  }

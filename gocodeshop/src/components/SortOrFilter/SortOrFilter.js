@@ -1,20 +1,15 @@
 import React from 'react'
-import { useContext } from 'react';
-import { MyContext } from '../../MyContext';
-
+import './SortOrFilter.css'
 export const SortOrFilter = ({label, optionsArray, onChange}) => {
-  const { setIsAdmin } = useContext(MyContext);
 
   return (
-    <div>
     <div className="collection-sort">
         <label>{label}</label>
         <select onChange={onChange}>
+          <option value={"All"}>All Products</option>
           {optionsArray.map((opt) => <option value={opt}>{opt}</option>)}
         </select>
-        <button onClick={() => setIsAdmin(prev => !prev)}>click me</button>
       </div>
-    </div>
   )
 }
 
