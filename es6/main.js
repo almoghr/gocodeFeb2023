@@ -89,3 +89,63 @@ const person = {
 const {greet,namee, agee} = person
 
 console.log(namee, greet(), agee)
+
+
+
+const dummyProducts = [
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+    {
+      title: "coat",
+      price: 125.64,
+      src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLPLBN2tYVRBMaU9eomNw-bvrQDZhP1NYH87bK1bzsn-BL_tsL5PrdaISbyBZAfCU3IaZ1mt5l6qWIjNhErQy87VE1g162uscqXWEv5cure3BKLZw8JjBQ3w&usqp=CAE",
+    },
+  ];
+  
+
+  const prices = dummyProducts.map(p => p.price)
+
+  console.log(prices)
