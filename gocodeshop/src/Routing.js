@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import App from "./App";
 import { MyContext } from "./MyContext";
-import About from "./components/About/About";
-import Cart from "./components/Cart/Cart";
-import Admin from "./components/Admin/Admin";
-import SingleProductPage from "./components/SingleProductPage/SingleProductPage";
+import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import CartPage from "./pages/CartPage/CartPage";
+import AdminPage from "./pages/AdminPage/AdminPage";
 
 const Routing = () => {
   const [categories, setCategories] = useState([]);
@@ -99,9 +99,9 @@ const Routing = () => {
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="product/:id" element={<SingleProductPage />}/>
-            <Route path="about" element={<About />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="admin" element={<Admin />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="cart" element={<CartPage />} />
+            <Route path="admin" element={<AdminPage />} />
         </Routes>
       </MyContext.Provider>
     </BrowserRouter>

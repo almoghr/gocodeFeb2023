@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { MyContext } from '../../MyContext'
 
-const Cart = () => {
+const CartPage = () => {
   const {cart} = useContext(MyContext)
   return (
     <div>
@@ -10,4 +10,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartPage
