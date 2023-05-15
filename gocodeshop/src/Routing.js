@@ -12,6 +12,7 @@ const Routing = () => {
   const [allProducts, setAllProducts] = useState([]);
   const [currentProducts, setCurrentProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false)
 
   const incrementProduct = (setFunc) => {
     setFunc((prev) => prev + 1);
@@ -90,6 +91,8 @@ const Routing = () => {
           incrementProduct,
           decrementProduct,
           addToCart,
+          setIsCartOpen,
+          isCartOpen
         }}
       >
         <Link to="/">HomePage</Link>
