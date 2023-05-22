@@ -1,10 +1,10 @@
 import fs from 'fs'
-// const powerByFive = (num) => {
-//     console.log(num ** 5)
-// }
+const powerByFive = (num) => {
+    console.log(num ** 5)
+}
 
-// powerByFive(10)
-// powerByFive(15)
+powerByFive(10)
+powerByFive(15)
 
 // //reading file
 // fs.readFile("./a.txt", 'utf8', (err, data) => {
