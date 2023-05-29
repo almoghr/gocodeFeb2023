@@ -1,5 +1,19 @@
 import fs from 'fs'
+import express from 'express'
 
+const app = express();
+
+app.get('/sayHello', (req, res) => {
+    res.send('Hello World!')
+  });
+
+  app.get('/sayGoodBye', (req, res) => {
+    res.send('Goodbye World!')
+  });
+
+  app.get('/', (req,res) => {
+    res.send('got here!')
+  })
 const readFile = (path) => {
     return JSON.parse(fs.readFileSync(path, 'utf8'))
 }
@@ -42,3 +56,8 @@ const updateFile = (id, path, updatedObj) => {
 }
 
 updateFile(1, "./users.json",{isCompleted:false, title:'yabadabadu', check:123})
+
+
+app.listen(8000, () => {
+    console.log('Example app listening on port 8000!')
+  });
