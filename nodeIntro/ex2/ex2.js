@@ -90,7 +90,6 @@ app.get("/average", async (req, res) => {
     `your total score is ${totalScore} and the average of it all is ${average}`
   );
 });
-
 app.post("/", async (req, res) => {
   try{
     const obj = { ...req.body };
