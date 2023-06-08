@@ -1,11 +1,11 @@
-import fs from "fs";
+import cors from 'cors'
 import mongoose from "mongoose";
 import express from "express";
 
 const app = express();
 
 app.use(express.json());
-
+app.use(cors())
 //CRUD
 //CREATE - writeToFile - singleObject \ array - POST
 //READ - readfile - GET
@@ -146,7 +146,7 @@ app.delete("/score/:id/", async (req, res) => {
 });
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/scores");
+  await mongoose.connect("mongodb://127.0.0.1:27017/go-code-shop");
 }
 
 main().catch((err) => console.log(err));

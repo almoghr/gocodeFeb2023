@@ -6,8 +6,10 @@ import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import CartPage from "./pages/CartPage/CartPage";
 import AdminPage from "./pages/AdminPage/AdminPage";
+import { GET_ALL_PRODUCTS_PATH } from "./constants/api";
 
 const Routing = () => {
+  console.log(process.env)
   const [categories, setCategories] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [currentProducts, setCurrentProducts] = useState([]);
@@ -44,7 +46,7 @@ const Routing = () => {
     setFunc(0);
   };
   const fetchProducts = async () => {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch(GET_ALL_PRODUCTS_PATH);
     const data = await response.json();
     setAllProducts(data);
     setCurrentProducts(data);
